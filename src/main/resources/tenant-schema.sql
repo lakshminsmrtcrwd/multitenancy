@@ -1,0 +1,1 @@
+create table User (id int8 AUTO_INCREMENT as identity, name varchar(255), email varchat(255), primary key (id));
