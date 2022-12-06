@@ -22,7 +22,7 @@ public class MultitenantConfiguration {
   @Bean
   @ConfigurationProperties(prefix = "tenants")
   public DataSource dataSource() {
-    File[] files = Paths.get("allFiles").toFile().listFiles();
+    File[] files = Paths.get("databaseConfigs").toFile().listFiles();
     Map<Object, Object> resolvedDataSources = new HashMap<>();
 
     for (File propertyFile : files) {
